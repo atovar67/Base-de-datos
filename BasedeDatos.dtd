@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/BasedeDatos.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE Configuracion SYSTEM "BasedeDatos.dtd">
+
+    <Configuracion>
+    ...
+    </Configuracion>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Configuracion ((BaseDatos)*)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT BaseDatos (Oficina, Sistema, IP_Host, Puerto, Usuario, Password, DatabaseName, TipoBasedeDatos)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Oficina (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Sistema (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT IP_Host (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Puerto (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Usuario (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Password (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT DatabaseName (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT TipoBasedeDatos (#PCDATA)>
